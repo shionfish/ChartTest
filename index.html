@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <meta name="format-detection" content="telephone=no" >
+    <title>web性能测试</title>
+    <!-- 测试页面：https://www.21fid.com/v1.5.0/todayknow1/appInside/1060275 -->
+    <style type="text/css">
+        .wid {
+            width: 199px;
+        }
+        .ali {
+            text-align: center;
+            color: #999;
+        }
+    </style>
+</head>
+<body>
+    <header></header>
+    <article></article>
+    <footer></footer>
+    <div id="echarts" class="echarts" style="width:100vw;height:230px;">
+    </div>
+    <section style="padding: 20px;">
+        <p>加载时间平均值：</p>
+        <table border="1" cellspacing="0" cellpadding="0">
+            <th class="wid">处理页面</th>
+            <th class="wid">加载时间(ms)</th>
+            <tr>
+                <td class="ali" style="color: #4e9df4">线上参照页面</td>
+                <td class="ali" id="cData1"></td>
+            </tr>
+            <tr>
+                <td class="ali" style="color: #e0a6ff">未优化处理</td>
+                <td class="ali" id="cData2"></td>
+            </tr>
+            <tr>
+                <td class="ali" style="color: #F4AF46">未压缩前</td>
+                <td class="ali" id="cData3"></td>
+            </tr>
+        </table>
+    </section>
+</body>
+<script src="./jquery-1.10.1.min.js"></script>
+<script src="./echarts.min.js"></script>
+<script src="./index.js"></script>
+
+<script type="text/javascript">
+
+</script>
+</html>
